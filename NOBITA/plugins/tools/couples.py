@@ -15,7 +15,7 @@ POLICE = [
     [
         InlineKeyboardButton(
             text="• ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ •",
-            url=f"https://t.me/NOBITA_MUSIC_ROBOT?startgroup=true",
+            url=f"https://t.me/Music_promaxbot?startgroup=true",
         ),
     ],
 ]
