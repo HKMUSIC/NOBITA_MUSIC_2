@@ -5,8 +5,8 @@ from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForb
 from NOBITA import app
 
 # Channels to enforce join
-MUST_JOIN_1 = "NOBITA_MUSIC_SUPPORT"
-MUST_JOIN_2 = "YOUR_NOBITA_001"
+MUST_JOIN_1 = "GOJO_SUPPORT_GROUP_II"
+MUST_JOIN_2 = "ll_your_gojo_ll"
 
 # List of random images
 IMAGES = [
@@ -73,13 +73,13 @@ async def must_join_channels(app: Client, msg: Message):
             await app.get_chat_member(MUST_JOIN_1, msg.from_user.id)
         except UserNotParticipant:
             link1 = f"https://t.me/{MUST_JOIN_1}"
-            await send_join_message(msg, link1, "NOBITA_MUSIC_SUPPORT")
+            await send_join_message(msg, link1, "GOJO_SUPPORT_GROUP_II")
 
         try:
             await app.get_chat_member(MUST_JOIN_2, msg.from_user.id)
         except UserNotParticipant:
             link2 = f"https://t.me/{MUST_JOIN_2}"
-            await send_join_message(msg, link2, "YOUR_NOBITA_001")
+            await send_join_message(msg, link2, "ll_your_gojo_ll")
 
     except ChatAdminRequired:
         print("Please make me admin in the required channels!")
